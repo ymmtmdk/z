@@ -29,7 +29,7 @@ function common(matches, fnd, nc) {
 
 BEGIN { split(q, a, " ") }
     {
-        if( system("test -d \"" $1 "\"") ) next
+        # if( system("test -d \"" $1 "\"") ) next
         if( typ == "rank" ) {
             f = $2
         } else if( typ == "recent" ) {
